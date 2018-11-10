@@ -189,7 +189,15 @@ function deleteData() {
 
 	if ($_SERVER['REQUEST_METHOD'] == "POST" && isset($_POST['delete'])) {
 		
-		//
+		$theDelID = $_POST['id'];
+
+	$sql2 = "DELETE FROM records WHERE id = {$theDelID}";
+	$result2 = mysqli_query($conn, $sql2);
+	if ($result2) {
+		echo "Record deleted.";
+	} else {
+		echo "There was a problem." . $sql . "<br>" . mysqli_error($conn);
+	}
 
 	}
 
