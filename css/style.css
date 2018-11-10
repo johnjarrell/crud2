@@ -6,6 +6,7 @@
 body {
 	background: url(../images/sat-dish.jpg);
 	background-size: contain;
+	font-family: Arial, Helvetica, sans-serif;
 	/* background-position: 100vh; */
 }
 
@@ -107,6 +108,13 @@ h1 {
 	background-color: aquamarine;
 }
 
+.center {
+	text-align: center;
+	font-size: 1.2rem;
+	padding: 10px 20px;
+	background: lightgreen;
+}
+
 .view-pane {
 	display: grid;
 	grid-gap: 20px;
@@ -119,6 +127,14 @@ h1 {
 .view-pane table td, .view-pane table th {
 	border: 1px solid #999;
 	padding: 10px;
+}
+
+.table {
+	//
+}
+
+.table tr:nth-child(odd) {
+	background: #c0c0c0;
 }
 
 #delete-page {

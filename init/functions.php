@@ -24,9 +24,9 @@ function addRecord() {
 
 		$sql = "INSERT INTO records (fname, lname, email) VALUES ('{$fname}', '{$lname}', '{$email}')";
 		if (mysqli_query($conn, $sql)) {
-			echo "Data entered.";
+			echo "<p class='center'>Data entered.</p>";
 		} else {
-			echo "There was a problem." . $sql . "<br>" . mysqli_error($conn);
+			echo "<p class='center'>There was a problem." . $sql . "<br>" . mysqli_error($conn) . "</p>";
 		}
 	}
 }
@@ -56,7 +56,7 @@ function readData() {
 
 		}
 	} else {
-		die("Error: " . mysqli_error($conn));
+		die("<p class='center'>Error: " . mysqli_error($conn) . "</p>");
 	}
 }
 
@@ -116,7 +116,7 @@ function getUpdateData() {
 			<?php
 
 	} else {
-		$theError = "Error: " . mysqli_error($conn);
+		$theError = "<p class='center'>Error: " . mysqli_error($conn) . "</p>";
 	}
 }
 
@@ -132,9 +132,9 @@ function updateData() {
 
 		$sql = "UPDATE records SET fname = '{$fname}', lname = '{$lname}', email = '{$email}' WHERE id = $theId";
 		if (mysqli_query($conn, $sql)) {
-			echo "Record Updated.";
+			echo "<p class='center'>Record Updated.</p>";
 		} else {
-			echo "There was a problem." . $sql . "<br>" . mysqli_error($conn);
+			echo "<p class='center'>There was a problem." . $sql . "<br>" . mysqli_error($conn) . "</p>";
 		}
 	}
 }
@@ -178,7 +178,7 @@ function getDeleteData() {
 		}
 
 	} else {
-		echo "There is no ID set to view.";
+		echo "<p class='center'>There is no ID set to view.</p>";
 	}
 
 }
@@ -194,9 +194,9 @@ function deleteData() {
 	$sql2 = "DELETE FROM records WHERE id = {$theDelID}";
 	$result2 = mysqli_query($conn, $sql2);
 	if ($result2) {
-		echo "Record deleted.";
+		echo "<p class='center'>Record deleted.</p>";
 	} else {
-		echo "There was a problem." . $sql . "<br>" . mysqli_error($conn);
+		echo "<p class='center'>There was a problem." . $sql . "<br>" . mysqli_error($conn) . "</p>";
 	}
 
 	}

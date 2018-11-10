@@ -2,7 +2,7 @@
 <div class="read-page">
 	<h1>Read Pane</h1>
 	<div class="view-pane">
-		<table>
+		<table class="table table-border table-striped">
 			<thead>
 				<tr>
 					<th>ID</th>
