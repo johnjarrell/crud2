@@ -1,0 +1,138 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../images/sat-dish.jpg);
+	background-size: contain;
+	/* background-position: 100vh; */
+}
+
+#header {
+	min-height: 20vh;
+	background-color: black;
+	color: darkgrey;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	padding: 20px;
+}
+
+#navbar {
+	text-align: center;
+	display: grid;
+}
+
+#navbar .main-nav {
+	//
+}
+
+#navbar li {
+	list-style-type: none;
+	display: inline-grid;
+}
+
+#navbar li a {
+	padding: 12px 20px;
+	color: #c0c0c0;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+
+#navbar li a:hover, #navbar li a.active {
+	color: black;
+	background-color: #c9c9c9;
+	border-radius: 10px 10px 0 0;
+}
+
+#content {
+	margin: auto;
+	min-height: 80vh;
+	/* background-color: #c9c9c9; */
+	padding: 30px;
+}
+
+.default {
+	text-align: center;
+}
+
+#create-page {
+	margin: auto;
+	width: 80%;
+	font-size: 1.5em;
+}
+
+.form-group input {
+	min-width: 100%;
+	display: block;
+	border: none;
+}
+
+#create-page .button, #update-page .button, #delete-page .button {
+	background-color: cadetblue;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1.2em;
+	border: none;
+}
+
+#create-page .button:hover {
+	background-color: white;
+	color: black;
+}
+
+.form-group {
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.form-group label {
+	padding: 5px;
+	font-weight: 200;
+}
+
+.form-group input[type=submit] {
+	min-width: 80%;
+	margin: auto;
+}
+
+.form-control {
+	display: block;
+	padding: 10px;
+	border-radius: 5px;
+	font-size: 1.2em;
+	background-color: aquamarine;
+}
+
+.view-pane {
+	display: grid;
+	grid-gap: 20px;
+}
+
+.view-pane table {
+	border: 1px solid #999;
+}
+
+.view-pane table td, .view-pane table th {
+	border: 1px solid #999;
+	padding: 10px;
+}
+
+#delete-page {
+	text-align: center;
+}
+
+#footer {
+	min-height: 20vh;
+	background-color: black;
+	color: darkgrey;
+}
+
+#footer p {
+	text-align: center;
+	font-size: 1.2em;
+	padding: 30px;
+}
